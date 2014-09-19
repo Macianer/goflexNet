@@ -1,0 +1,6 @@
+* * * * * /opt/gauges_left.sh /dev/sdb
+* * * * * /opt/gauges_right.sh /dev/sda
+00 2 * * * /opt/backupRoot.sh
+00 3 * * * /opt/backupShare.sh
+00 4 * * * minidlnad -R -f /etc/minidlna.conf
+00 5 * * * /opt/diskusage.sh
