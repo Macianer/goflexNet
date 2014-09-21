@@ -5,6 +5,6 @@
 00 3 * * * /opt/backupShare.sh
 00 4 * * * minidlnad -R -f /etc/minidlna.conf
 00 5 * * * /opt/diskusage.sh
-10 4 * * * fdupes -r /media/data/share/Photos > /srv/http/duplicatePhotos.txt
-20 4 * * * fdupes -r /media/data/share/Videos > /srv/http/duplicateVideos.txt
-30 4 * * * fdupes -r /media/data/share/Data > /srv/http/duplicateData.txt
+10 4 * * * fdupes -rnS /media/data/share/Photos > /srv/http/duplicatePhotos.txt
+20 4 * * * fdupes -rnS /media/data/share/Videos > /srv/http/duplicateVideos.txt
+30 4 * * * fdupes -rnS /media/data/share/Data > /srv/http/duplicateData.txt
