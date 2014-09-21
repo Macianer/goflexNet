@@ -1,3 +1,4 @@
+# tip: env EDITOR=nano crontab -e
 * * * * * /opt/gauges_left.sh /dev/sdb
 * * * * * /opt/gauges_right.sh /dev/sda
 00 2 * * * /opt/backupRoot.sh
